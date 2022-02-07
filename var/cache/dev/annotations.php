@@ -54,13 +54,65 @@ return [[
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%23addLink' => 1,
 'Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container' => 0,
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container' => 1,
+'App%5CController%5CHomeController' => 0,
+'[C]App%5CController%5CHomeController' => 1,
+'App%5CController%5CHomeController%23findAllGreaterThanPrice' => 0,
+'[C]App%5CController%5CHomeController%23findAllGreaterThanPrice' => 1,
+'App%5CController%5CHomeController%23index' => 0,
+'[C]App%5CController%5CHomeController%23index' => 1,
+'App%5CController%5CProductController' => 0,
+'[C]App%5CController%5CProductController' => 1,
+'App%5CController%5CProductController%23createProduct' => 2,
+'[C]App%5CController%5CProductController%23createProduct' => 1,
+'App%5CController%5CProductController%23index' => 0,
+'[C]App%5CController%5CProductController%23index' => 1,
+'App%5CController%5CRegistrationController' => 0,
+'[C]App%5CController%5CRegistrationController' => 1,
+'App%5CController%5CRegistrationController%23register' => 0,
+'[C]App%5CController%5CRegistrationController%23register' => 1,
 'App%5CController%5CSecurityController' => 0,
 '[C]App%5CController%5CSecurityController' => 1,
-'App%5CController%5CSecurityController%23login' => 2,
+'App%5CController%5CSecurityController%23login' => 3,
 '[C]App%5CController%5CSecurityController%23login' => 1,
-'App%5CController%5CSecurityController%23logout' => 3,
+'App%5CController%5CSecurityController%23logout' => 4,
 '[C]App%5CController%5CSecurityController%23logout' => 1,
-'App%5CEntity%5CUser' => 0,
+'App%5CEntity%5CProduct' => 0,
+'[C]App%5CEntity%5CProduct' => 1,
+'App%5CEntity%5CProduct%23getId' => 0,
+'[C]App%5CEntity%5CProduct%23getId' => 1,
+'App%5CEntity%5CProduct%23getName' => 0,
+'[C]App%5CEntity%5CProduct%23getName' => 1,
+'App%5CEntity%5CProduct%23setName' => 0,
+'[C]App%5CEntity%5CProduct%23setName' => 1,
+'App%5CEntity%5CProduct%23getPrix' => 0,
+'[C]App%5CEntity%5CProduct%23getPrix' => 1,
+'App%5CEntity%5CProduct%23setPrix' => 0,
+'[C]App%5CEntity%5CProduct%23setPrix' => 1,
+'App%5CEntity%5CProduct%23getDescription' => 0,
+'[C]App%5CEntity%5CProduct%23getDescription' => 1,
+'App%5CEntity%5CProduct%23setDescription' => 0,
+'[C]App%5CEntity%5CProduct%23setDescription' => 1,
+'App%5CEntity%5CProduct%23getQuantit%C3%A9' => 0,
+'[C]App%5CEntity%5CProduct%23getQuantit%C3%A9' => 1,
+'App%5CEntity%5CProduct%23setQuantit%C3%A9' => 0,
+'[C]App%5CEntity%5CProduct%23setQuantit%C3%A9' => 1,
+'App%5CEntity%5CProduct%23getImage' => 0,
+'[C]App%5CEntity%5CProduct%23getImage' => 1,
+'App%5CEntity%5CProduct%23setImage' => 0,
+'[C]App%5CEntity%5CProduct%23setImage' => 1,
+'App%5CEntity%5CProduct%24id' => 0,
+'[C]App%5CEntity%5CProduct%24id' => 1,
+'App%5CEntity%5CProduct%24name' => 0,
+'[C]App%5CEntity%5CProduct%24name' => 1,
+'App%5CEntity%5CProduct%24prix' => 0,
+'[C]App%5CEntity%5CProduct%24prix' => 1,
+'App%5CEntity%5CProduct%24description' => 0,
+'[C]App%5CEntity%5CProduct%24description' => 1,
+'App%5CEntity%5CProduct%24quantit%C3%A9' => 0,
+'[C]App%5CEntity%5CProduct%24quantit%C3%A9' => 1,
+'App%5CEntity%5CProduct%24image' => 0,
+'[C]App%5CEntity%5CProduct%24image' => 1,
+'App%5CEntity%5CUser' => 5,
 '[C]App%5CEntity%5CUser' => 1,
 'App%5CEntity%5CUser%23getId' => 0,
 '[C]App%5CEntity%5CUser%23getId' => 1,
@@ -636,8 +688,57 @@ return [[
 ], [
 
 0 => [],
-1 => 1643963243,
+1 => 1644098489,
 2 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        ],
+        null,
+        [
+            'Symfony\\Component\\Routing\\Annotation\\Route' => [
+                'path' => [
+                    '/product',
+                ],
+                'methods' => [
+                    [],
+                ],
+                'schemes' => [
+                    [],
+                ],
+                'name' => [
+                    'create_product',
+                ],
+                'requirements' => [
+                    [],
+                ],
+                'options' => [
+                    [],
+                ],
+                'defaults' => [
+                    [],
+                ],
+                'host' => [
+                    null,
+                ],
+                'condition' => [
+                    null,
+                ],
+                'priority' => [
+                    null,
+                ],
+                'env' => [
+                    null,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+3 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
@@ -686,7 +787,7 @@ return [[
         []
     );
 },
-3 => static function () {
+4 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
@@ -726,6 +827,35 @@ return [[
                 ],
                 'env' => [
                     null,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+5 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'groups' => [
+                    [
+                        'Default',
+                    ],
+                ],
+                'message' => [
+                    'There is already an account with this email',
+                ],
+                'fields' => [
+                    [
+                        'email',
+                    ],
                 ],
             ],
         ],
