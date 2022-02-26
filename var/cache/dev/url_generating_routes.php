@@ -25,6 +25,8 @@ return [
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
+    'user_adress' => [[], ['_controller' => 'App\\Controller\\UserAdressController::index'], [], [['text', '/user/adress']], [], [], []],
     'index' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/']], [], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/home']], [], [], []],
+    'adress' => [[], ['_controller' => 'App\\Controller\\UserAdressController::index'], [], [['text', '/user_adress']], [], [], []],
 ];

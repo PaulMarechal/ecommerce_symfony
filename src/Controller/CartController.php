@@ -95,6 +95,7 @@ class CartController extends AbstractController
         $panier = $session->get("panier", [] );
         //$id = $product->setId();
         
+
         if(!empty($panier[$id])){
             unset($panier[$id]);
         } 

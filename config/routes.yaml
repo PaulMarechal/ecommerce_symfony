@@ -13,3 +13,7 @@ index:
 home: 
     path: /home
     controller: App\Controller\HomeController::index
+
+adress:
+    path: /user_adress
+    controller: App\Controller\UserAdressController::index

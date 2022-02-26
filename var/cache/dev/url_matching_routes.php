@@ -24,7 +24,9 @@ return [
             [['_route' => 'index', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null],
         ],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
+        '/user/adress' => [[['_route' => 'user_adress', '_controller' => 'App\\Controller\\UserAdressController::index'], null, null, null, false, false, null]],
         '/home' => [[['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
+        '/user_adress' => [[['_route' => 'adress', '_controller' => 'App\\Controller\\UserAdressController::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

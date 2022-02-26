@@ -191,7 +191,7 @@ class __TwigTemplate_c1a0e5ebf9b536dd9b17f0f7d8bff80c extends Template
         // line 70
         echo twig_escape_filter($this->env, (isset($context["total"]) || array_key_exists("total", $context) ? $context["total"] : (function () { throw new RuntimeError('Variable "total" does not exist.', 70, $this->source); })()), "html", null, true);
         echo " €</td>
-            <td><a style=\"margin-left:40%;\" href=\"\" class=\"btn btn-success\">Valider</a></td>
+            <td><a style=\"margin-left:40%;\" href=\"/user_adress\" class=\"btn btn-success\">Valider</a></td>
         </tr>
     </tfoot>
 </table>
@@ -291,7 +291,7 @@ class __TwigTemplate_c1a0e5ebf9b536dd9b17f0f7d8bff80c extends Template
         <tr>
             <td colspan=\"3\">Total</td>
             <td class=\"text-end\">{{total}} €</td>
-            <td><a style=\"margin-left:40%;\" href=\"\" class=\"btn btn-success\">Valider</a></td>
+            <td><a style=\"margin-left:40%;\" href=\"/user_adress\" class=\"btn btn-success\">Valider</a></td>
         </tr>
     </tfoot>
 </table>
