@@ -105,7 +105,7 @@ class __TwigTemplate_dfb0b1918fe04b5b1e593aa5b8e1145f extends Template
       </a>
 
       <ul class=\"nav nav-pills\">
-        <li class=\"nav-item\"><a href=\"#\" class=\"nav-link active\" aria-current=\"page\">Home</a></li>
+        <li class=\"nav-item\"><a href=\"/home\" class=\"nav-link active\" aria-current=\"page\">Home</a></li>
         <li class=\"nav-item\"><a href=\"/product/show\" class=\"nav-link\">Tous les produits</a></li>
         <li class=\"nav-item\"><a href=\"/cart\" class=\"nav-link\">Panier</a></li>
         <li class=\"nav-item\"><a href=\"/logout\" class=\"nav-link\">Déconnexion</a></li>
@@ -221,7 +221,7 @@ class __TwigTemplate_dfb0b1918fe04b5b1e593aa5b8e1145f extends Template
       </a>
 
       <ul class=\"nav nav-pills\">
-        <li class=\"nav-item\"><a href=\"#\" class=\"nav-link active\" aria-current=\"page\">Home</a></li>
+        <li class=\"nav-item\"><a href=\"/home\" class=\"nav-link active\" aria-current=\"page\">Home</a></li>
         <li class=\"nav-item\"><a href=\"/product/show\" class=\"nav-link\">Tous les produits</a></li>
         <li class=\"nav-item\"><a href=\"/cart\" class=\"nav-link\">Panier</a></li>
         <li class=\"nav-item\"><a href=\"/logout\" class=\"nav-link\">Déconnexion</a></li>

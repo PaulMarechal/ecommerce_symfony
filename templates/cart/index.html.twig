@@ -8,6 +8,8 @@
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .table{width: 90%; margin-left: 5%; margin-top: 1em;}
+    .titrePanier{text-align: center; }
 
 </style>
 
@@ -24,10 +26,10 @@
       </ul>
 </header>
 
-<section class="bg-light p-3">
 </section>
 
-<table class="table">
+<table class="table mr-2 ml-2">
+<h3 class="titrePanier">Panier</h3>
     <thead>
         <tr>
             <th>Produit</th>
@@ -62,13 +64,12 @@
             </tr>
             
         {% endfor %}
-        {{dump()}}
     </tbody>
     <tfoot>
         <tr>
             <td colspan="3">Total</td>
             <td class="text-end">{{total}} €</td>
-            <td><a style="margin-left:40%;" href="/user_adress" class="btn btn-success">Valider</a></td>
+            <td><a style="margin-left:40%;" href="/adress" class="btn btn-success">Valider</a></td>
         </tr>
     </tfoot>
 </table>

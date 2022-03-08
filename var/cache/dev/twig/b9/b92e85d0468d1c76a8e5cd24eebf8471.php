@@ -161,66 +161,23 @@ class __TwigTemplate_f3f7b655ece39f12d8cfc3a92cecdf5f extends Template
         <span class=\"fs-4\">Food Culture Street</span>
       </a>
 
-
-      ";
-        // line 81
-        echo "
-        ";
-        // line 102
-        echo "
-
-
-            ";
-        // line 115
-        echo "
-
-
-            ";
-        // line 122
-        echo "
-      ";
-        // line 124
-        echo "
       <ul class=\"nav nav-pills\">
         <form method=\"post\" role=\"form\">
             ";
-        // line 127
-        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 127, $this->source); })())) {
-            // line 128
-            echo "                <div class=\"alert alert-danger\">";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 128, $this->source); })()), "messageKey", [], "any", false, false, false, 128), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 128, $this->source); })()), "messageData", [], "any", false, false, false, 128), "security"), "html", null, true);
-            echo "</div>
-            ";
-        }
-        // line 130
-        echo "
-            ";
-        // line 131
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 131, $this->source); })()), "user", [], "any", false, false, false, 131)) {
-            // line 132
-            echo "                <div class=\"mb-3\">
-                    You are logged in as ";
-            // line 133
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 133, $this->source); })()), "user", [], "any", false, false, false, 133), "username", [], "any", false, false, false, 133), "html", null, true);
-            echo ", <a href=\"";
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-            echo "\">Logout</a>
-                </div>
-            ";
-        }
-        // line 136
+        // line 90
         echo "
             <ul class=\"nav nav-pills\">
                 <li class=\"nav-item\" style=\"margin-right:1em\"><input type=\"email\" placeholder=\"email@gmail.com\" value=\"";
-        // line 138
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 138, $this->source); })()), "html", null, true);
+        // line 92
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 92, $this->source); })()), "html", null, true);
         echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus style=\"margin-right: 1em\"></li>
                 <li class=\"nav-item\" style=\"margin-right:1em\"><input type=\"password\" placeholder=\"mot de pase\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required></li>
                 <li class=\"nav-item\" style=\"margin-right:1em\"><button class=\"btn btn-primary\" type=\"submit\">Sign in</button></li>
+                <li class=\"nav-item\" style=\"margin-right:1em\"><a class=\"btn btn-primary\" href=\"/register\">Register</a></li>
             </ul>
 
             <input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 143
+        // line 98
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\">
         </form>
@@ -255,7 +212,7 @@ class __TwigTemplate_f3f7b655ece39f12d8cfc3a92cecdf5f extends Template
 </section>
 
 ";
-        // line 176
+        // line 131
         echo "
 
 <!-- images rondes -->
@@ -306,13 +263,13 @@ class __TwigTemplate_f3f7b655ece39f12d8cfc3a92cecdf5f extends Template
       <div class=\"col-md-7 order-md-2\">
         <h2 class=\"featurette-heading\">FAIT<span class=\"text-muted\"></br>MAISON</span></h2>
         ";
-        // line 226
+        // line 181
         echo "        <p style=\"text-align: justify;\">De la haute cuisine à des prix abordables. Notre carte va vous faire saliver ! Pour seulement 8 euros, que ce soit version salade ou sandwich, régalez-vous avec (pour n’en citer qu’un) <b>“Le 12h50 : effiloché de boeuf bourguignon”</b> qui contient un <i>confit d’oignon flambé au whisky, des pickles carottes, des champignons de Paris snackés, de la roquette, une sauce bourguignonne, des brisures de cacahuètes torréfié et du persil</i>. Vous pouvez les accompagner de pommes de terre rôties au thym ou de coleslaw. Et pour 4,50 euros une ribambelle de desserts (<b>Tacos façon tatin</b>, <b>financier chocolat pécan</b>…). Tous nos produits sont bien entendu préparés sur place dans le respect des normes et du client.</p>
 
       </div>
       <div class=\"col-md-5 order-md-1\">
         ";
-        // line 231
+        // line 186
         echo "        <img class=\"bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto\" width=\"500\" height=\"500\" src=\"https://static.wixstatic.com/media/4329d6_222972eb79bc4214af01ab30eb710097~mv2.jpg/v1/fill/w_1198,h_898,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/70740955_2542765909107311_1465156525990346752_n.jpg\" alt=\"\">   
 
       </div>
@@ -345,7 +302,7 @@ class __TwigTemplate_f3f7b655ece39f12d8cfc3a92cecdf5f extends Template
 
     public function getDebugInfo()
     {
-        return array (  316 => 231,  310 => 226,  259 => 176,  224 => 143,  216 => 138,  212 => 136,  204 => 133,  201 => 132,  199 => 131,  196 => 130,  190 => 128,  188 => 127,  183 => 124,  180 => 122,  175 => 115,  170 => 102,  167 => 81,  155 => 70,  151 => 67,  94 => 11,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  273 => 186,  267 => 181,  216 => 131,  181 => 98,  172 => 92,  168 => 90,  155 => 70,  151 => 67,  94 => 11,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -428,55 +385,9 @@ class __TwigTemplate_f3f7b655ece39f12d8cfc3a92cecdf5f extends Template
         <span class=\"fs-4\">Food Culture Street</span>
       </a>
 
-
-      {# test  #}
-
-        {# <form method=\"post\">
-            {% if error %}
-                <div class=\"alert alert-danger\">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-            {% endif %}
-
-            {% if app.user %}
-                <div class=\"mb-3\">
-                    You are logged in as {{ app.user.username }}, <a href=\"{{ path('app_logout') }}\">Logout</a>
-                </div>
-            {% endif %}
-
-            <h1 class=\"h3 mb-3 font-weight-normal\">Please sign in</h1>
-            <label for=\"inputEmail\">Email</label>
-            <input type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus>
-            <label for=\"inputPassword\">Password</label>
-            <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required>
-
-            <input type=\"hidden\" name=\"_csrf_token\"
-                value=\"{{ csrf_token('authenticate') }}\"
-            > #}
-
-
-
-            {#
-                Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
-                See https://symfony.com/doc/current/security/remember_me.html
-
-                <div class=\"checkbox mb-3\">
-                    <label>
-                        <input type=\"checkbox\" name=\"_remember_me\"> Remember me
-                    </label>
-                </div>
-            #}
-
-
-
-            {# <button class=\"btn btn-lg btn-primary\" type=\"submit\">
-                Sign in
-            </button>
-        </form> #}
-
-      {# fin test #}
-
       <ul class=\"nav nav-pills\">
         <form method=\"post\" role=\"form\">
-            {% if error %}
+            {# {% if error %}
                 <div class=\"alert alert-danger\">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
             {% endif %}
 
@@ -484,12 +395,13 @@ class __TwigTemplate_f3f7b655ece39f12d8cfc3a92cecdf5f extends Template
                 <div class=\"mb-3\">
                     You are logged in as {{ app.user.username }}, <a href=\"{{ path('app_logout') }}\">Logout</a>
                 </div>
-            {% endif %}
+            {% endif %} #}
 
             <ul class=\"nav nav-pills\">
                 <li class=\"nav-item\" style=\"margin-right:1em\"><input type=\"email\" placeholder=\"email@gmail.com\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus style=\"margin-right: 1em\"></li>
                 <li class=\"nav-item\" style=\"margin-right:1em\"><input type=\"password\" placeholder=\"mot de pase\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required></li>
                 <li class=\"nav-item\" style=\"margin-right:1em\"><button class=\"btn btn-primary\" type=\"submit\">Sign in</button></li>
+                <li class=\"nav-item\" style=\"margin-right:1em\"><a class=\"btn btn-primary\" href=\"/register\">Register</a></li>
             </ul>
 
             <input type=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token('authenticate') }}\">

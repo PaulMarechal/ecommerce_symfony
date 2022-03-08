@@ -8,16 +8,19 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use App\Entity\Products;
 use App\Repository\ProductRepository;
-
+use Symfony\Component\HttpFoundation\Request;
 
 class CartController extends AbstractController
 {
+    
     #[Route('/cart', name: 'cart')]
-    public function index(SessionInterface $session, ProductRepository $productRepository): Response
+    public function index(SessionInterface $session, ProductRepository $productRepository, Request $request): Response
     {
          $panier = $session->get("panier", []);
 
-        // // On "fabrique" les données
+         $session = $request->getSession();
+            echo $session->get('name');
+         // On "fabrique" les données
          $dataPanier = [];
          $total = 0;
 
@@ -28,9 +31,13 @@ class CartController extends AbstractController
                 "quantity" => $quantite
             ];
             $total += $product->getPrix() * $quantite;
+           
         }
+        $userId = $session->getId(User::class);
+        //$test = $session->getEmail();
+        $userEmail = $session->get('_security.last_username');
 
-        return $this->render('cart/index.html.twig', compact("dataPanier", "total"));
+        return $this->render('cart/index.html.twig', compact("dataPanier", "total", "userId", "userEmail"));
     }
 
     #[Route('/add/{id}', name: 'cart_add')]
@@ -65,6 +72,7 @@ class CartController extends AbstractController
         
         // on recupere le panier actuel 
         $panier = $session->get("panier", [] );
+        dd($session);
         //$id = $product->setId();
         
         
@@ -79,7 +87,7 @@ class CartController extends AbstractController
         // on sauvegarde dans la session 
         $session->set("panier", $panier);
 
-        // dd($panier);
+        //dd($panier);
         return $this->redirectToRoute("cart");
 
         return $this->render('cart/index.html.twig', [

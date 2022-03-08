@@ -88,22 +88,28 @@ class __TwigTemplate_ffc3a1b7b89dfdd297eae75652cf1dda extends Template
         echo "<style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    ";
+        // line 10
+        echo "</style>
+
+<a href=\"";
+        // line 12
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show");
+        echo "\" class=\"btn btn-success\">
+    <i class=\"bi bi-cart-plus\">voir les produits</i>
+</a>
 
 <div class=\"example-wrapper\">
-    <h1>Hello ";
-        // line 12
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 12, $this->source); })()), "html", null, true);
-        echo "! ✅</h1>
+    <h1>Hello ! ✅</h1>
 
     This friendly message is coming from:
     <ul>
         <li>Your controller at <code><a href=\"";
-        // line 16
+        // line 21
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/Users/paulmarechal/Sites/tests/www/sorbonne/Symfony/Ecommerce/src/Controller/ProductController.php", 0), "html", null, true);
         echo "\">src/Controller/ProductController.php</a></code></li>
         <li>Your template at <code><a href=\"";
-        // line 17
+        // line 22
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/Users/paulmarechal/Sites/tests/www/sorbonne/Symfony/Ecommerce/templates/product/index.html.twig", 0), "html", null, true);
         echo "\">templates/product/index.html.twig</a></code></li>
     </ul>
@@ -129,7 +135,7 @@ class __TwigTemplate_ffc3a1b7b89dfdd297eae75652cf1dda extends Template
 
     public function getDebugInfo()
     {
-        return array (  107 => 17,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  113 => 22,  109 => 21,  97 => 12,  93 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -142,10 +148,15 @@ class __TwigTemplate_ffc3a1b7b89dfdd297eae75652cf1dda extends Template
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    {# .carousel {margin-bottom: 4rem;} #}
 </style>
 
+<a href=\"{{path(\"show\")}}\" class=\"btn btn-success\">
+    <i class=\"bi bi-cart-plus\">voir les produits</i>
+</a>
+
 <div class=\"example-wrapper\">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Hello ! ✅</h1>
 
     This friendly message is coming from:
     <ul>

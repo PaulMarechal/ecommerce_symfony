@@ -119,7 +119,8 @@ class __TwigTemplate_5f0602f16d546f7d67ce845476de11d5 extends Template
     .card-img-top{width: 111%; margin-left: -12px; height: 246px;}
     ";
         // line 18
-        echo "    
+        echo "    .scroll-page {align-items: center; justify-content: center; height: 200px; overflow-y: scroll; scroll-behavior: smooth;}
+    
 </style>
 <header class=\"d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom\">
     <a href=\"/home\" class=\"d-flex align-items-center mb-2 md-0 me-md-auto text-dark text-decoration-none\">
@@ -134,52 +135,44 @@ class __TwigTemplate_5f0602f16d546f7d67ce845476de11d5 extends Template
       </ul>
 </header>
 <div class=\"example-wrapper\">
-    
 
-    <p>Product : </p>
    <div class=\"row row-cols-1 row-cols-md-4 g-4\">
     ";
-        // line 38
-        echo "    ";
+        // line 36
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 38, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 36, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["produit"]) {
-            // line 39
+            // line 37
             echo "
         <div class=\"card\" style=\"width: 15.45rem; margin-right: 1.5em; text-align: 'center\">
             <img src=\"";
-            // line 41
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["produit"], "image", [], "any", false, false, false, 41), "html", null, true);
+            // line 39
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["produit"], "image", [], "any", false, false, false, 39), "html", null, true);
             echo "\"  class=\"card-img-top\" alt=\"...\">
             <div class=\"card-body\">
                 <h5 class=\"card-title\">";
-            // line 43
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["produit"], "name", [], "any", false, false, false, 43), "html", null, true);
+            // line 41
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["produit"], "name", [], "any", false, false, false, 41), "html", null, true);
             echo "</h5>
-                <p style=\"height: 360px; font-weight: 100; text-align: justify;\" class=\"card-text\">";
-            // line 44
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["produit"], "description", [], "any", false, false, false, 44), "html", null, true);
-            echo "</p>
-                <p class=\"card-text\">";
-            // line 45
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["produit"], "prix", [], "any", false, false, false, 45), "html", null, true);
+                <p style=\"\" class=\"card-text scroll-page\">";
+            // line 42
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["produit"], "description", [], "any", false, false, false, 42), "html", null, true);
+            echo "</p> ";
+            // line 43
+            echo "                <p class=\"card-text\">";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["produit"], "prix", [], "any", false, false, false, 43), "html", null, true);
             echo " €   <a style=\"margin-left:2em\" href=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cart_add", ["id" => twig_get_attribute($this->env, $this->source, $context["produit"], "id", [], "any", false, false, false, 45)]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cart_add", ["id" => twig_get_attribute($this->env, $this->source, $context["produit"], "id", [], "any", false, false, false, 43)]), "html", null, true);
             echo "\" class=\"btn btn-primary\">AJouter</a></p>
             </div>
         </div>
-
-    ";
-            // line 62
-            echo "    
+    
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['produit'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 64
-        echo "    ";
-        // line 65
+        // line 48
         echo "</div>
 ";
         
@@ -202,7 +195,7 @@ class __TwigTemplate_5f0602f16d546f7d67ce845476de11d5 extends Template
 
     public function getDebugInfo()
     {
-        return array (  183 => 65,  181 => 64,  174 => 62,  165 => 45,  161 => 44,  157 => 43,  152 => 41,  148 => 39,  143 => 38,  122 => 18,  112 => 9,  102 => 8,  89 => 5,  79 => 4,  60 => 3,  37 => 1,);
+        return array (  176 => 48,  162 => 43,  159 => 42,  155 => 41,  150 => 39,  146 => 37,  142 => 36,  122 => 18,  112 => 9,  102 => 8,  89 => 5,  79 => 4,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -224,6 +217,7 @@ class __TwigTemplate_5f0602f16d546f7d67ce845476de11d5 extends Template
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
     .card-img-top{width: 111%; margin-left: -12px; height: 246px;}
     {# .card-text{height: 150px!important;} #}
+    .scroll-page {align-items: center; justify-content: center; height: 200px; overflow-y: scroll; scroll-behavior: smooth;}
     
 </style>
 <header class=\"d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom\">
@@ -239,38 +233,20 @@ class __TwigTemplate_5f0602f16d546f7d67ce845476de11d5 extends Template
       </ul>
 </header>
 <div class=\"example-wrapper\">
-    
 
-    <p>Product : </p>
    <div class=\"row row-cols-1 row-cols-md-4 g-4\">
-    {# <section class=\"row\"> #}
     {% for produit in product %}
 
         <div class=\"card\" style=\"width: 15.45rem; margin-right: 1.5em; text-align: 'center\">
             <img src=\"{{ produit.image}}\"  class=\"card-img-top\" alt=\"...\">
             <div class=\"card-body\">
                 <h5 class=\"card-title\">{{ produit.name}}</h5>
-                <p style=\"height: 360px; font-weight: 100; text-align: justify;\" class=\"card-text\">{{ produit.description}}</p>
+                <p style=\"\" class=\"card-text scroll-page\">{{ produit.description}}</p> {# height: 360px; font-weight: 100; text-align: justify; #}
                 <p class=\"card-text\">{{ produit.prix}} €   <a style=\"margin-left:2em\" href=\"{{path(\"cart_add\", {id: produit.id} )}}\" class=\"btn btn-primary\">AJouter</a></p>
             </div>
         </div>
-
-    {# <div class=\"col-4 mt-4\">
-        <div class=\"border border-dark rounded p-2 clearfix\">
-            <h2>{{ produit.name}}</h2>
-            <p>{{ produit.description}}</p>
-            <p>{{ produit.prix}}€</p>
-            <img class=\"w-100\" src=\"{{ produit.image}}\" alt=\"Image de {{produit.name}}\">
-            <hr>
-            <a href=\"{{path(\"cart_add\", {id: produit.id} )}}\" class=\"btn btn-success\">
-                <i class=\"bi bi-cart-plus\">AJouter</i>
-            </a>
-            <p><br></p>
-        </div>
-    </div> #}
     
     {% endfor %}
-    {# </section> #}
 </div>
 {% endblock %}
 ", "product/show.html.twig", "/Users/paulmarechal/Sites/tests/www/sorbonne/Symfony/Ecommerce/templates/product/show.html.twig");

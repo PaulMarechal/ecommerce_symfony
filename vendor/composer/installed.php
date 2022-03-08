@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '4d14983ad3c47e839007f28aa52400a251968310',
+        'reference' => '74288550c0aee5c95099148d54e1986027a3410c',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '4d14983ad3c47e839007f28aa52400a251968310',
+            'reference' => '74288550c0aee5c95099148d54e1986027a3410c',
             'dev_requirement' => false,
         ),
         'doctrine/annotations' => array(
@@ -262,8 +262,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0.0 || 2.0.0 || 3.0.0',
-                1 => '1.0|2.0|3.0',
+                0 => '1.0|2.0|3.0',
+                1 => '1.0.0 || 2.0.0 || 3.0.0',
             ),
         ),
         'psr/simple-cache-implementation' => array(
@@ -438,12 +438,12 @@
             'dev_requirement' => false,
         ),
         'symfony/form' => array(
-            'pretty_version' => 'v6.0.3',
-            'version' => '6.0.3.0',
+            'pretty_version' => 'v6.0.5',
+            'version' => '6.0.5.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/form',
             'aliases' => array(),
-            'reference' => '201f7ae26e74340c38047472cd23cfe6bd99d1f5',
+            'reference' => '2465793d4ad8e40752a45997193d392eb1fc3384',
             'dev_requirement' => false,
         ),
         'symfony/framework-bundle' => array(
@@ -626,6 +626,15 @@
             'reference' => '51ba60d4340fd91dd42c9caad76a414a521fbee4',
             'dev_requirement' => false,
         ),
+        'symfony/requirements-checker' => array(
+            'pretty_version' => 'v2.0.1',
+            'version' => '2.0.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/requirements-checker',
+            'aliases' => array(),
+            'reference' => 'cf8893f384348a338157d637e170fe8fb2356016',
+            'dev_requirement' => false,
+        ),
         'symfony/routing' => array(
             'pretty_version' => 'v6.0.3',
             'version' => '6.0.3.0',
@@ -741,12 +750,12 @@
             'dev_requirement' => false,
         ),
         'symfony/validator' => array(
-            'pretty_version' => 'v6.0.3',
-            'version' => '6.0.3.0',
+            'pretty_version' => 'v6.0.5',
+            'version' => '6.0.5.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/validator',
             'aliases' => array(),
-            'reference' => '35f3614f605227ad16e03cab9fb9815ba05f5878',
+            'reference' => '11520c1ee42b6e7050afe7a08da6612efcae6e34',
             'dev_requirement' => false,
         ),
         'symfony/var-dumper' => array(
